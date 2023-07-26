@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #aaa;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+
+    .dayRadio {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 55px;
+        font-size: 20px;
+        margin-left: 20px;
+
+        input {
+            position: absolute;
+            transform: translate(-150%, -150%);
+        }
+
+        @media(max-width: 915px) {
+            flex-direction: column;
+        }
+    }
+
+    #taskNumber {
+        margin-bottom: 15px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 10px;
+
+        #btnAdd,
+        #btnClear,
+        #btnEdit,
+        #btnRemove {
+            padding: 15px;
+            font-size: 15px;
+            transition: 200ms;
+        }
+
+        #btnAdd:hover,
+        #btnEdit:hover {
+            background-color: green;
+        }
+
+        #btnClear:hover,
+        #btnRemove:hover {
+            background-color: red;
+            color: white;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+
+        .taskInput {
+            width: 45vw;
+            min-width: 300px;
+            height: 30px;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+    }
+
+    #editTask {
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+
+        p {
+            font-size: 20px;
+        }
+
+        #taskNumber {
+            width: 150px;
+        }
+    }
+}
+
+main {
+    margin: 0 15px;
+
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            width: 265px;
+
+
+            h3 {
+                border-bottom: 1px solid black;
+                font-size: 22px;
+            }
+
+            ol {
+                max-width: 265px;
+            }
+
+            li {
+                margin-left: 2px;
+                padding: 5px 0;
+                font-size: 17px;
+                overflow-wrap: break-word;
+                border-bottom: 1px solid black;
+                list-style: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #aaa;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+header .dayRadio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+header .dayRadio input {
+  position: absolute;
+  transform: translate(-150%, -150%);
+}
+@media (max-width: 915px) {
+  header .dayRadio {
+    flex-direction: column;
+  }
+}
+header #taskNumber {
+  margin-bottom: 15px;
+}
+header .buttons {
+  display: flex;
+  gap: 10px;
+}
+header .buttons #btnAdd,
+header .buttons #btnClear,
+header .buttons #btnEdit,
+header .buttons #btnRemove {
+  padding: 15px;
+  font-size: 15px;
+  transition: 200ms;
+}
+header .buttons #btnAdd:hover,
+header .buttons #btnEdit:hover {
+  background-color: green;
+}
+header .buttons #btnClear:hover,
+header .buttons #btnRemove:hover {
+  background-color: red;
+  color: white;
+}
+header form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+header form .taskInput {
+  width: 45vw;
+  min-width: 300px;
+  height: 30px;
+  font-size: 20px;
+  margin: 15px 0;
+}
+header #editTask {
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+header #editTask p {
+  font-size: 20px;
+}
+header #editTask #taskNumber {
+  width: 150px;
+}
+
+main {
+  margin: 0 15px;
+}
+main .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+main .wrapper div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  width: 265px;
+}
+main .wrapper div h3 {
+  border-bottom: 1px solid black;
+  font-size: 22px;
+}
+main .wrapper div ol {
+  max-width: 265px;
+}
+main .wrapper div li {
+  margin-left: 2px;
+  padding: 5px 0;
+  font-size: 17px;
+  overflow-wrap: break-word;
+  border-bottom: 1px solid black;
+  list-style: none;
+}/*# sourceMappingURL=style.css.map */

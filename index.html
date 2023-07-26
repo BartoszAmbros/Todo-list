@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+        <form id="addTask">
+            <label>
+                <h1>Dodawanie zadań</h1>
+                <input type="text" class="taskInput" id="taskInput" placeholder="Treść zadania" required>
+            </label>
+            <div class="dayRadio">
+                <label>
+                    <p>Poniedziałek</p>
+                    <input type="radio" name="day" id="day1" checked>
+                </label>
+                <label>
+                    <p>Wtorek</p>
+                    <input type="radio" name="day" id="day2">
+                </label>
+                <label>
+                    <p>Środa</p>
+                    <input type="radio" name="day" id="day3">
+                </label>
+                <label>
+                    <p>Czwartek</p>
+                    <input type="radio" name="day" id="day4">
+                </label>
+                <label>
+                    <p>Piątek</p>
+                    <input type="radio" name="day" id="day5">
+                </label>
+                <label>
+                    <p>Sobota</p>
+                    <input type="radio" name="day" id="day6">
+                </label>
+                <label>
+                    <p>Niedziela</p>
+                    <input type="radio" name="day" id="day7">
+                </label>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" id="btnAdd">Dodaj</button>
+                <button type="reset" id="btnClear">Wyczyść</button>
+            </div>
+        </form>
+
+        <form id="editTask">
+            <h1>Usuwanie i edytowanie</h1>
+            <div class="dayRadio">
+                <label>
+                    <p>Poniedziałek</p>
+                    <input type="radio" name="day" id="day1_2" checked>
+                </label>
+                <label>
+                    <p>Wtorek</p>
+                    <input type="radio" name="day" id="day2_2">
+                </label>
+                <label>
+                    <p>Środa</p>
+                    <input type="radio" name="day" id="day3_2">
+                </label>
+                <label>
+                    <p>Czwartek</p>
+                    <input type="radio" name="day" id="day4_2">
+                </label>
+                <label>
+                    <p>Piątek</p>
+                    <input type="radio" name="day" id="day5_2">
+                </label>
+                <label>
+                    <p>Sobota</p>
+                    <input type="radio" name="day" id="day6_2">
+                </label>
+                <label>
+                    <p>Niedziela</p>
+                    <input type="radio" name="day" id="day7_2">
+                </label>
+            </div>
+            <p>Podaj numer zadania</p>
+            <input type="number" name="number" id="taskNumber">
+            <div class="buttons">
+                <button type="submit" id="btnEdit">Edytuj</button>
+                <button type="reset" id="btnRemove">Usuń</button>
+            </div>
+        </form>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <div id="Pon">
+                <h3>Poniedziałek</h3>
+                <ol>
+                </ol>
+            </div>
+            <div id="Wt">
+                <h3>Wtorek</h3>
+                <ol></ol>
+            </div>
+            <div id="Sr">
+                <h3>Środa</h3>
+                <ol></ol>
+            </div>
+            <div id="Czw">
+                <h3>Czwartek</h3>
+                <ol>
+                </ol>
+            </div>
+            <div id="Pt">
+                <h3>Piątek</h3>
+                <ol></ol>
+            </div>
+            <div id="Sob">
+                <h3>Sobota</h3>
+                <ol></ol>
+            </div>
+            <div id="Niedz">
+                <h3>Niedziela</h3>
+                <ol></ol>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
